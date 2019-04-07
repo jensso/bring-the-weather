@@ -1,33 +1,126 @@
-.App {
+body {
+  margin: 2vw auto;
+  background: deepskyblue;
+}
+
+h1 {
+  margin: 2vw;
+  text-align: center;
+  color: silver;
+  background: green;
+  padding: 1vw;
+  border-radius: 2.5vw;
+  border: 0.2vw solid silver;
+}
+
+body form {
+  background: lightgreen;
+  border-radius: 2vw;
+  margin: 1vw;
+  border: 0.2vw solid lime;
+  display: flex;
+}
+
+body form button {
+  margin: 2vw;
+  color: white;
+  background: deepskyblue;
+  font-size: 2vw;
+  padding: 1vw;
+  border-radius: 2.5vw;
+  border: 0.2vw solid silver;
+}
+
+body form button:hover {
+  cursor: pointer;
+  color: lightgreen;
+  background: green;
+}
+
+body form button:focus {
+  outline: none;
+}
+
+body form input {
+  width: 80%;
+  margin: 2vw;
+  font-size: 2vw;
+  padding: 1vw;
+  border-radius: 2vw;
+  border: 0.2vw solid lime;
+}
+
+body form input::placeholder {
+  color: grey;
+  opacity: 0.8;
+  font-family: "Comic Sans MS";
+  font-size: 1.8vw;
+}
+
+body form input:focus {
+  outline: none;
+}
+
+body #weatherForm {
+  width: 80%;
+  margin: 2vw auto;
+  border-radius: 2vw;
+  border: 0.2vw solid lime;
+}
+#err {
+  width: 60%;
+  padding: 1vw;
+  margin: 1vw auto;
+  text-align: center;
+  color: white;
+  background: deepskyblue;
+  border: 0.2vw dotted white;
+  border-radius: 2vw;
+}
+body #container {
+  width: 80%;
+  margin: 2vw auto;
+  border-radius: 2vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body #container section {
+  font-family: "Comic Sans MS";
+  text-align: center;
+  width: 30%;
+  margin: 1vw;
+  opacity: 0.8;
+  background: lightblue;
+  box-shadow: rgba(150, 60, 210, 0.6);
+  border-radius: 2vw;
+}
+
+body #container section:hover {
+  cursor: pointer;
+  opacity: 1;
+  box-shadow: 0.4vw 0.4vw lime;
+  border: 0.1vw solid grey;
+}
+
+body #container section h3 {
+  color: rgba(50, 60, 50, 0.8);
+  background: rgba(150, 160, 170, 0.4);
+  text-shadow: 0.1vw 0.2vw #fff;
+  font-size: 3vw;
+  margin: 1vw;
+  padding: 1vw 2vw;
+  border-radius: 2vw;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body #container section p {
+  color: rgba(100, 50, 20, 0.9);
+  background: rgba(150, 160, 170, 0.4);
+  border-radius: 2vw;
+  text-shadow: 0.2vw 0.1vw rgba(100, 200, 255, 0.8);
+  font-size: 3vw;
+  margin: 1vw;
+  padding: 2vw 1vw;
+  text-align: center;
 }
