@@ -34,6 +34,11 @@ export class App extends React.Component {
                   });
                   console.log(this.state.weatherArr);
 }
+  handleRemove(ev) {
+    let rmvIndex = ev.currentTarget.getAttribute('id');
+    this.state.weatherArr.splice(rmvIndex,1);
+    this.setState({weatherArr: this.state.weatherArr});
+  }
 
   render() {
     return (
@@ -48,7 +53,7 @@ export class App extends React.Component {
         </div>
         <div id="container">
          {this.state.weatherArr.map((city, index)=>
-           <section key={index}>
+           <section onClick={this.handleRemove.bind(this)} id={index} key={index}>
             <h3>{city.data.name}</h3>
             <p>{city.data.weather[0].description}</p>
             <img src={`http://openweathermap.org/img/w/${city.data.weather[0].icon}.png`} alt="icon"></img>
