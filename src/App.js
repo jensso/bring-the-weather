@@ -32,7 +32,6 @@ export class App extends React.Component {
                   citys: [],
                   error: ''
                   });
-                  console.log(this.state.weatherArr);
 }
   handleRemove(ev) {
     let rmvIndex = ev.currentTarget.getAttribute('id');
