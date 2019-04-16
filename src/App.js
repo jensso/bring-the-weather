@@ -38,6 +38,7 @@ export class App extends React.Component {
     this.state.weatherArr.splice(rmvIndex,1);
     this.setState({weatherArr: this.state.weatherArr});
   }
+  
 
   render() {
     return (
