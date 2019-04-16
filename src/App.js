@@ -66,8 +66,3 @@ export class App extends React.Component {
     );
   }
 }
-
-// <h3>{city['.data.name']}</h3>
-// <p>{city['.data.weather[0].description']}</p>
-// <p>{Math.round((city['.data.main.temp'-273.15]))} °C</p>
-// <img src={`http://openweathermap.org/img/w/${city['.data.weather[0].icon']}.png`} alt="icon"></img>
